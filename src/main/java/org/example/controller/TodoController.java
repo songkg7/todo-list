@@ -7,7 +7,6 @@ import org.example.model.TodoRequest;
 import org.example.model.TodoResponse;
 import org.example.service.TodoService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
