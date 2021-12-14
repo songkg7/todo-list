@@ -68,8 +68,6 @@ class TodoServiceTest {
         given(this.todoRepository.findById(anyLong()))
                 .willReturn(Optional.empty());
 
-        assertThrows(ResponseStatusException.class, () -> {
-            this.todoService.searchById(123L);
-        });
+        assertThrows(ResponseStatusException.class, () -> this.todoService.searchById(123L));
     }
 }
